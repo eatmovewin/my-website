@@ -1,0 +1,405 @@
+/* ===========================
+   EatMove Win Website
+   Version 1
+=========================== */
+
+:root{
+
+    --bg:#0f1115;
+    --card:#181b22;
+    --card-hover:#20242d;
+    --text:#ffffff;
+    --text-light:#b7bcc8;
+    --primary:#37d67a;
+    --primary-hover:#2db867;
+
+    --radius:18px;
+
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+
+    --max-width:1200px;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+    color:var(--text);
+
+    font-family:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+.container{
+
+    width:min(92%, var(--max-width));
+    margin:auto;
+
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+header{
+
+    position:sticky;
+    top:0;
+
+    background:rgba(15,17,21,.92);
+
+    backdrop-filter:blur(12px);
+
+    z-index:999;
+
+    border-bottom:1px solid #222;
+
+}
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+nav{
+
+    display:flex;
+    gap:24px;
+
+}
+
+nav a{
+
+    color:white;
+
+    transition:.25s;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+
+    padding:90px 0;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--text-light);
+
+    font-size:1.1rem;
+
+}
+
+.buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.buttons a{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:999px;
+
+    transition:.25s;
+
+    font-weight:bold;
+
+}
+
+.buttons a:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+SECTION
+=========================== */
+
+section{
+
+    padding:70px 0;
+
+}
+
+section h2{
+
+    margin-bottom:30px;
+
+    font-size:2rem;
+
+}
+
+/* ===========================
+CARDS
+=========================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:24px;
+
+}
+
+.card{
+
+    background:var(--card);
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:var(--card-hover);
+
+}
+
+.card img{
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    padding:18px 20px 10px;
+
+    font-size:1.2rem;
+
+}
+
+.card p{
+
+    padding:0 20px;
+
+    color:var(--text-light);
+
+    min-height:60px;
+
+}
+
+.card a{
+
+    display:inline-block;
+
+    margin:20px;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    transition:.25s;
+
+}
+
+.card a:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* ===========================
+ABOUT
+=========================== */
+
+.about p{
+
+    max-width:850px;
+
+    color:var(--text-light);
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+    border-top:1px solid #222;
+
+    padding:40px 0;
+
+    text-align:center;
+
+    color:#9aa1ad;
+
+}
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+header .container{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+nav{
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+.hero h1{
+
+    font-size:2.2rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.buttons a{
+
+    width:230px;
+
+    text-align:center;
+
+}
+
+section{
+
+    padding:50px 0;
+
+}
+
+}
