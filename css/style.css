@@ -403,3 +403,35 @@ section{
 }
 
 }
+
+/* ===========================
+ACTIVE MENU
+=========================== */
+
+nav a.active{
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+CARD ANIMATION
+=========================== */
+
+.card{
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+}
+
+.card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:.6s;
+
+}
