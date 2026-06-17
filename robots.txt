@@ -1,5 +1,9 @@
+# อนุญาตให้ Search Engine ทุกตัวเข้าถึงเว็บ
+
 User-agent: *
 
 Allow: /
+
+# ตำแหน่งของ Sitemap
 
 Sitemap: https://eatmovewin.com/sitemap.xml
