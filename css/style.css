@@ -435,7 +435,13 @@ CARD ANIMATION
     transition:.6s;
 
 }
-.logo {
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
     height: 50px;
     width: auto;
 }
